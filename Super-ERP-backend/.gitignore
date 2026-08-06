@@ -1,0 +1,37 @@
+# Local Environment Secrets
+.env
+.env.*
+.env*
+!.env.example
+
+# Dependencies (package-lock.json remains committed)
+node_modules/
+/yarn.lock
+/pnpm-lock.yaml
+
+# User File Uploads (Ignored to avoid committing runtime storage)
+uploads/*
+!uploads/.gitkeep
+
+# Build & Test Outputs
+dist/
+build/
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Terraform (if present)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+
+# Editor & OS Metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
